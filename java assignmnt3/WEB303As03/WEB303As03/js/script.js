@@ -1,3 +1,5 @@
+//Name: Manpreet Kaur
+//Assignment:3
 function byGetJson (){
     $.getJSON("team.json", function(data){
     console.log(data);
@@ -30,6 +32,12 @@ function byGetJson (){
                 $('div#team').append($("<h5>" + team.position + "</h5>"));
                 $('div#team').append($("<p>" + team.bio + "</p>"));
             });
+            setTimeout(function() {
+              // Hide the loading message
+              $('#loading...').hide();
+              
+              // Handle the JSON data and update the page content here
+            }, 3000);
         },
         error: function(error) {
             console.error('Error:', error);
