@@ -33,11 +33,8 @@ function byGetJson (){
                 $('div#team').append($("<p>" + team.bio + "</p>"));
             });
             setTimeout(function() {
-              // Hide the loading message
-              $('#loading...').hide();
-              
-              // Handle the JSON data and update the page content here
-            }, 3000);
+                $('#loading...').hide();// loading message display for three seconds and delaye the content being displayed on page
+               }, 3000);
         },
         error: function(error) {
             console.error('Error:', error);
