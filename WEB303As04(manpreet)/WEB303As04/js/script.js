@@ -31,20 +31,21 @@ $(function () {
 
           $("#locationhere").append(markup);
         
-            // Display current location
-            document.getElementById("locationhere").textContent = 'Current Location: Latitude ${currentLocation.latitude}, Longitude ${currentLocation.longitude}, Accuracy ${currentLocation.accuracy.toFixed(2)} meters';
+           // Display current location
+           document.getElementById("locationhere").textContent = ` Current Location: Latitude ${currentLocation.latitude}, Longitude ${currentLocation.longitude}, Accuracy ${currentLocation.accuracy.toFixed(2)} meters `;
 
-          // Check if a location value is already stored in localStorage
-         const storedLocation = JSON.parse(localStorage.getItem("userLocation"));
-         if (storedLocation) {
-            // Display the stored location
-            document.getElementById("previousLocation").textContent = 'Previous Location: Latitude ${storedLocation.latitude}, Longitude ${storedLocation.longitude} Accuracy ${currentLocation.accuracy.toFixed(2)} meters';
-  
-            // Display a welcome back message
-            document.getElementById("welcomeMessage").textContent = "<h2>Welcome back to the page!</h2>";
-
-            // Display the distance traveled
-            document.getElementById("distanceMessage").textContent = 'You traveled ${distance} meters since your last visit.';
+           // Check if a location value is already stored in localStorage
+          const storedLocation = JSON.parse(localStorage.getItem("userLocation"));
+          if (storedLocation) {
+             // Display the stored location
+             document.getElementById("previousLocation").textContent = ` Previous Location: Latitude ${storedLocation.latitude}, Longitude ${storedLocation.longitude} Accuracy ${currentLocation.accuracy.toFixed(2)} meters `;
+   
+             // Display a welcome back message
+             document.getElementById("welcomeMessage").textContent = "<h1>Welcome back to the page!</h1>";
+             
+ 
+             // Display the distance traveled
+             document.getElementById("distanceMessage").textContent = ` You traveled ${distance} meters since your last visit . `;
           } else {
             // Display a welcome message for first-time visitors
             document.getElementById("welcomeMessage").textContent = "Welcome to the page for the first time!";
