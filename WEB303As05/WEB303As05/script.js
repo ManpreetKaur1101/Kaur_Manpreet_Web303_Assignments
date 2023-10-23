@@ -33,14 +33,6 @@ $(document).ready(function () {
          
         }
     }
-    // Apply styles using jQuery 
-        for(i = 0; i < allitems.length; i++){
-        $('#content-item-list').css({
-          border: '4px solid orange ',
-          padding: '15px', 
-         width: '250px', 
-         margin: '40px auto', 
-         } )};
 
             //unsuccssfull button click
             $('#unsuccessful-button').click(function(){
@@ -83,6 +75,7 @@ $(document).ready(function () {
         categoryGenre : 'Jazz' 
       }
     ] 
+
     for(i = 0; i < allitems.length; i++){
       $('#content-item-list').append(
   '<div class ="content-item-wrapper"id= "content-item-' +allitems[i].id + '">'+
@@ -91,5 +84,14 @@ $(document).ready(function () {
    '<div> CategoryGenre :- '+ allitems[i].categoryGenre+' </div>'+
     '</div>'); 
   };
+
+  // Apply styles using jQuery 
+        for(i = 0; i < allitems.length; i++){
+        $('#content-item-list').css({
+          border: '4px solid orange ',
+          padding: '15px', 
+         width: '250px', 
+         margin: '40px auto', 
+         } )};
 
 });
