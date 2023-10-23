@@ -33,6 +33,15 @@ $(document).ready(function () {
          
         }
     }
+
+    // Apply styles using jQuery 
+        for(i = 0; i < allitems.length; i++){
+        $('#content-item-list').css({
+          border: '4px solid orange ',
+          padding: '15px', 
+         width: '250px', 
+         margin: '40px auto', 
+         } )};
             //unsuccssfull button click
             $('#unsuccessful-button').click(function(){
               updateContentItemUnsuccessfully();
