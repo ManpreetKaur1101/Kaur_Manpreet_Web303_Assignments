@@ -1,0 +1,62 @@
+html{
+    margin:0;
+    background-color: pink;
+    border:0.3em solid saddlebrown;
+}
+
+h1{
+    font-size: 4em;
+    color:hotpink;
+    text-align: center;
+  text-transform: capitalize;
+  border:0.1em solid saddlebrown;
+
+}
+
+h2{
+    font-size: 2em;
+    color: brown;
+}
+
+li{
+    color: cadetblue;
+}
+
+p{
+    font-size: 1.5em;
+}
+
+button{
+    color: gray;
+    background-color:firebrick;
+    width: 100%;
+    font-size: 3em;
+}
+
+.accord{
+    list-style-type:none;
+}
+
+.accord-panel{
+    display: none;
+}
+
+.tab-list{
+    margin:0;
+    padding:0;
+}
+.tab-list li{
+    display:inline-block;
+    background-color:darkgray;
+    font-size: 2em;
+}
+.tab-list li a{
+    display: block;
+    color:deeppink;
+    padding: 3px 10px 3px 10px;
+}
+cite{
+    text-align: center;
+    color:blue;
+
+}
