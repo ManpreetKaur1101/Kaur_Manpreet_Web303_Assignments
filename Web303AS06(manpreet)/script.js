@@ -10,10 +10,11 @@ $('.accord-label').on('click',function(e){
 $('.accord-panel').each(function(){
     //make sure that showing class is removed - no panel
     $this .removeClass('showing');
-    $this.next().slideToggle()
-})
+  
+});
 // show the panel that is for the button
-$this.next().toggleClass();
+$this.next().toggleClass('showing');
+$this.next().slideToggle()
 
 // hide other panels
 $('.accord-panel').not($this.next()).slideUp();
