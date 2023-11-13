@@ -15,7 +15,7 @@ $('table').addClass('tbl');
 let $headingRow = $('<tr/>').addClass('headingRow');
 // add this row to thead
 $('thead').append($headingRow);
-$headingRow.append($('<td/>').text('FirstName'));
+$headingRow.append($('<td/>').text('Firstname'));
 $headingRow.append($('<td/>').text('LastName'));
 $headingRow.append($('<td/>').text('Age'));
 $headingRow.append($('<td/>').text('Occupation'));
@@ -45,10 +45,10 @@ $.ajax({
             // create row
             let $row = $('<tr/>').addClass('row');
             // add td to the row
-            $row.append($('<td id="firstN"></td>').text(value.firstName));
+            $row.append($('<td id="firstn"></td>').text(value.firstname));
             $row.append($('<td></td>').text(value.lastName));
             $row.append($('<td></td>').text(value.age));
-            $row.append($('<td id="occu"> </td>').text(value.occupation));
+            $row.append($('<td> </td>').text(value.occupation));
             $row.append($('<td></td>').text(value.color));
             $row.append($('<td></td>').text(value.city));
             $row.append($('<td></td>').text(value.province));
@@ -59,13 +59,13 @@ $.ajax({
         // Start SEArching by occupation 
         // lets add an id = occu to that cell 
 
-        let $firstNames = $('tbody #firstN');
+        let $firstnames = $('tbody #firstn');
         let $search = $('#search');
         // create the cache array - element and text
         let cache = [];
         let trr = $('tr');
 
-        firstNames.each(function(){
+        firstnames.each(function(){
             cache.push({
                 element: this,
                 text: this.textContent.trim().toLowerCase()
@@ -73,27 +73,27 @@ $.ajax({
         });
         console.log(cache);
         // search function
-        function searchFirstName(){
+        function searchFirstname(){
             let query = this.value.trim().toLowerCase();
-            cache.forEach(function(firstName){
+            cache.forEach(function(firstname){
                 let index=0;
                 if(query){
-                    index = firstName.text.indexOf(query);
+                    index = firstname.text.indexOf(query);
                 }
-                firstName.element.style.background = index === -1 ? 'blanchedalmond' : 'darkgreen';
-                firstName.element.style.color = index === -1 ? 'black' : 'white';
+                firstname.element.style.background = index === -1 ? 'blanchedalmond' : 'darkgreen';
+                firstname.element.style.color = index === -1 ? 'black' : 'white';
                 if($(search).val() == " "){
-                    firstName.element.style.color = 'black';
-                    firstName.element.style.background = 'blanchedalmond'
+                    firstname.element.style.color = 'black';
+                    firstname.element.style.background = 'blanchedalmond'
                 }
 
             });
 
         }
        if('oninput' in $search[0]){
-           $search.on('input', searchFirstName);
+           $search.on('input', searchFirstname);
         }else{
-            $search.on('input', searchFirstName);
+            $search.on('input', searchFirstname);
         }
 
         // Filer only students 

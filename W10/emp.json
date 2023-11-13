@@ -1,6 +1,6 @@
 [
     {
-        "firstName": "Ammy",
+        "firstname": "Ammy",
         "lastName":"virk",
         "age": "25",
         "occupation": "Engineer",
@@ -9,7 +9,7 @@
         "province":"ontario"
     },
     {
-        "firstName": "Sonam",
+        "firstname": "Sonam",
         "lastName":"Bajwa",
         "age": "22",
         "occupation": "Actor",
@@ -18,7 +18,7 @@
         "province":"Manitobe"
     },
     {
-        "firstName": "Simmy",
+        "firstname": "Simmy",
         "lastName":"Chahal",
         "age": "22",
         "occupation": "Model",
@@ -28,7 +28,7 @@
     },
     {
        
-        "firstName": "Gippy",
+        "firstname": "Gippy",
         "lastName":"Grewal",
         "age": "32",
         "occupation": "singer",
@@ -37,7 +37,7 @@
         "province":"ontario"
     },
     {
-    "firstName": "Jassi",
+    "firstname": "Jassi",
     "lastName":"Gill",
     "age": "32",
     "occupation": "singer",
