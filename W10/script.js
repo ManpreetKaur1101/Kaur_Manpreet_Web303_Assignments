@@ -45,7 +45,7 @@ $.ajax({
             // create row
             let $row = $('<tr/>').addClass('row');
             // add td to the row
-            $row.append($('<td id="firstn"></td>').text(value.firstname));
+            $row.append($('<td id="fname"></td>').text(value.firstname));
             $row.append($('<td></td>').text(value.lastName));
             $row.append($('<td></td>').text(value.age));
             $row.append($('<td> </td>').text(value.occupation));
@@ -59,7 +59,7 @@ $.ajax({
         // Start SEArching by occupation 
         // lets add an id = occu to that cell 
 
-        let $firstnames = $('tbody #firstn');
+        let $firstnames = $('tbody #fname');
         let $search = $('#search');
         // create the cache array - element and text
         let cache = [];
