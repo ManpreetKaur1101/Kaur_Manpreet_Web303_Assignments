@@ -1,0 +1,51 @@
+[
+    {
+        "firstName": "Ammy",
+        "lastName":"virk",
+        "age": "25",
+        "occupation": "Engineer",
+        "city": "Windsor",
+        "color":"Brown",
+        "province":"ontario"
+    },
+    {
+        "firstName": "Sonam",
+        "lastName":"Bajwa",
+        "age": "22",
+        "occupation": "Actor",
+        "city": "Toronto",
+        "color":"color",
+        "province":"Manitobe"
+    },
+    {
+        "firstName": "Simmy",
+        "lastName":"Chahal",
+        "age": "22",
+        "occupation": "Model",
+        "city": "LaSalle",
+        "color":"Black",
+        "province":"BC"
+    },
+    {
+       
+        "firstName": "Gippy",
+        "lastName":"Grewal",
+        "age": "32",
+        "occupation": "singer",
+        "city": "London",
+        "color":"Brown",
+        "province":"ontario"
+    },
+    {
+    "firstName": "Jassi",
+    "lastName":"Gill",
+    "age": "32",
+    "occupation": "singer",
+    "city": "Quebec",
+    "color":"Brown",
+    "province":"Manitobe"
+    }
+
+
+    
+]
