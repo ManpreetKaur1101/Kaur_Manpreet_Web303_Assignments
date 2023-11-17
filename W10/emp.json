@@ -1,0 +1,54 @@
+[
+    {
+        "firstName": "Ammy",
+        "lastName":"virk",
+        "age": "25",
+        "occupation": "Engineer",
+        "city": "Windsor",
+        "color":"Brown",
+        "project":"3-5",
+        "hired":"2023-07-23"
+    },
+    {
+        "firstName": "Neeru",
+        "lastName":"Bajwa",
+        "age": "22",
+        "occupation": "Actor",
+        "city": "Toronto",
+        "color":"color",
+        "project":"5-8",
+        "hired":"2010-03-15"
+    },
+    {
+        "firstName": "Simmy",
+        "lastName":"Chahal",
+        "age": "22",
+        "occupation": "Model",
+        "city": "LaSalle",
+        "color":"Black",
+        "project":"2-9",
+        "hired":"2002-04-23"
+    },
+    {
+       
+        "firstName": "Gippy",
+        "lastName":"Grewal",
+        "age": "32",
+        "occupation": "singer",
+        "city": "London",
+        "color":"Brown",
+        "project":"4-8",
+        "hired":"2010-06-13"
+    },
+    {
+    "firstName": "Jassi",
+    "lastName":"Gill",
+    "age": "32",
+    "occupation": "singer",
+    "city": "Quebec",
+    "color":"Brown",
+    "project":"1-5",
+    "hired":"2017-05-10"
+    }
+    
+]
