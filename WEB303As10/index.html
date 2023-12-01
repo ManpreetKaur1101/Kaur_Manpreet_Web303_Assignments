@@ -1,0 +1,42 @@
+<html>
+
+<head>
+    <link href="css/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <h1>
+        Manpreet Kaur
+    </h1>
+    <form id="registrationForm">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" oninput="validateForm()">
+        <br>
+        <label for="password">Password (at least 12 characters):</label>
+        <input type="password" id="password" name="password" oninput="validateForm()">
+        <br>
+        <label for="confirmPassword">Confirm Password:</label>
+        <input type="password" id="confirmPassword" name="confirmPassword" oninput="validateForm()">
+        <br>
+        <label>
+            <input type="checkbox" id="termsCheckbox" onchange="validateForm()"> I accept the terms of service
+        </label>
+        <br>
+        <label for="country">Select your country:</label>
+        <select id="country" name="country" onchange="validateForm()">
+            <option value="" selected disabled>Select your country</option>
+            <!-- Country options will be added dynamically using JavaScript -->
+        </select>
+        <br>
+        <button type="button" id="submitBtn" onclick="submitForm()" disabled>Submit</button>
+    </form>
+    <div id="welcomeMessage" class="hidden"></div>
+    
+
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/countries.js"></script>
+    <script type="text/javascript" src="js/script.js"></script>
+    
+</body>
+
+</html>
